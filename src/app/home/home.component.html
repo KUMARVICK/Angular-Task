@@ -1,0 +1,18 @@
+<h1>This Is My Home Page</h1>
+<a (click)="logout()" routerLink="/login">logout</a>
+<table class="table mt-3">
+    <thead><tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dt of personData">
+            <td>{{dt.id}}</td>
+            <td>{{dt.name}}</td>
+            <td>{{dt.email}}</td>
+        </tr>
+    </tbody>
+</table>
+
